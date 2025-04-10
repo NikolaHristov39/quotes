@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #5585b5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 16px;
+  color: #333;
+}
+
+h1.header {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #bbe4e9;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.buttonsDiv {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  background-color: #79c2d0;
+  border-radius: 5px;
+}
+
+button.btnQuotes1 {
+  background: #79c2d0;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 75%; /* 75% width for the first button */
+}
+
+button.btnQuotes2 {
+  background: #79c2d0;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 25%; /* 25% width for the second button */
+}
+
+button.btnQuotes1:hover,
+button.btnQuotes2:hover {
+  background: #53a8b6;
+}
+
+.messageQuotes {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #444;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  padding: 20px;
+  border-left: 6px solid #00bcd4;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.authorQuotes {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #bbe4e9;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+  h1.header {
+    font-size: 2.5rem;
+  }
+
+  .buttonsDiv {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    gap: 15px;
+  }
+
+  button.btnQuotes1,
+  button.btnQuotes2 {
+    width: 100%; /* Full width for both buttons on smaller screens */
+  }
+
+  .messageQuotes {
+    font-size: 1.25rem;
+    padding: 15px;
+  }
+
+  .authorQuotes {
+    font-size: 1.1rem;
+  }
+}
